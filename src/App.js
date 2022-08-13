@@ -4,5 +4,10 @@ import { Header } from "./components/Header";
 import { NavBar } from "./components/NavBar";
 
 export const App = () => {
-  return <Header></Header>;
+  return (
+    <header>
+      <NavBar></NavBar>
+      <Header></Header>;
+    </header>
+  );
 };
