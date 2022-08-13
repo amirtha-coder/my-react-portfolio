@@ -26,7 +26,7 @@ export const NavBar = () => {
 
   return (
     <AppBar
-      position="fixed"
+      position="static"
       sx={{
         backgroundColor: "#ff006e",
         margin: 0,
