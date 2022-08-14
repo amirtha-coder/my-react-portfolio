@@ -15,7 +15,7 @@ export const AboutMe = () => {
         "& > :not(style)": {
           m: 1,
           width: "100vw",
-          height: "40vh",
+          height: "100%",
           borderRadius: "5%",
         },
       }}
@@ -24,7 +24,7 @@ export const AboutMe = () => {
       <Stack
         sx={{
           boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-          backgroundColour: "#ffbe0b",
+          //   backgroundColour: "#ffbe0b",
         }}
       >
         <Typography variant="h6" component="h4" sx={{}}>

@@ -7,11 +7,14 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
+import SettingsInputAntennaIcon from "@mui/icons-material/SettingsInputAntenna";
+import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
-const pages = ["About Me", "Skills", "Projects", "Contact Me"];
+const pages = ["AboutMe", "Portfolio", "Contact Me", "CV"];
 
 export const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -25,35 +28,30 @@ export const NavBar = () => {
   };
 
   return (
-    <AppBar
-      position="static"
-      sx={{
-        backgroundColor: "#ff006e",
-        margin: 0,
-        padding: 0,
-      }}
-    >
-      <Container
-        maxWidth="xl"
-        sx={{
-          backgroundColor: "fb5607",
-        }}
-      >
+    <AppBar position="static">
+      <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box
-            component="img"
-            sx={{
-              height: 100,
-              width: 100,
-              padding: 0,
-              margin: 1,
-              borderRadius: 50,
-              maxHeight: { xs: 233, md: 167 },
-              maxWidth: { xs: 350, md: 250 },
-            }}
-            alt="logo."
-            src="../../webLogo.png"
+          <SettingsInputAntennaIcon
+            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
           />
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="/"
+            sx={{
+              mr: 2,
+              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            LOGO
+          </Typography>
+
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -90,6 +88,27 @@ export const NavBar = () => {
               ))}
             </Menu>
           </Box>
+          <SettingsInputAntennaIcon
+            sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
+          />
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              mr: 2,
+              display: { xs: "flex", md: "none" },
+              flexGrow: 1,
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            LOGO
+          </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
@@ -101,7 +120,6 @@ export const NavBar = () => {
               </Button>
             ))}
           </Box>
-          <Box sx={{ flexGrow: 0 }}></Box>
         </Toolbar>
       </Container>
     </AppBar>

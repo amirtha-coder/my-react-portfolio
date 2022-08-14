@@ -7,7 +7,7 @@ import { NavBar } from "./components/NavBar";
 
 export const App = () => {
   return (
-    <Box>
+    <body>
       <header>
         <NavBar />
         <Header />
@@ -17,6 +17,6 @@ export const App = () => {
         <AboutMe />
       </main>
       <script src="path/to/particles.min.js"></script>
-    </Box>
+    </body>
   );
 };

@@ -16,7 +16,7 @@ export const Header = () => {
         justifyContent: "center",
         alignItems: "center",
         height: 800,
-        backgroundColor: "#8338ec",
+        // backgroundColor: "#8338ec",
       }}
     >
       <Avatar

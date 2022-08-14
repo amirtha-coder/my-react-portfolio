@@ -1,3 +1,9 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("https://images.pexels.com/photos/220118/pexels-photo-220118.jpeg?cs=srgb&dl=pexels-pixabay-220118.jpg&fm=jpg");
+}
+
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.5s; /* Change to speed up or slow down */
