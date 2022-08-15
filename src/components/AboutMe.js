@@ -1,7 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Typewriter from 'typewriter-effect;
+import Typewriter from "typewriter-effect";
 import "../App.css";
 
 import { Stack } from "@mui/system";
