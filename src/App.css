@@ -46,3 +46,13 @@ body {
   left: 0;
   z-index: 0;
 }
+
+.about-me-container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 2rem;
+  height: 100%;
+  padding: 1.5rem;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 5%;
+}

@@ -1,7 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Paper from "@mui/material/Paper";
+import Typewriter from 'typewriter-effect;
 import "../App.css";
 
 import { Stack } from "@mui/system";
@@ -20,15 +20,9 @@ export const AboutMe = () => {
         },
       }}
     >
-      <canvas class="background"></canvas>
-      <Stack
-        sx={{
-          boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-          //   backgroundColour: "#ffbe0b",
-        }}
-      >
-        <Typography variant="h6" component="h4" sx={{}}>
-          <strong>About Me</strong>
+      <Box>
+        <Typography variant="h3" component="h4" className="about-me-container">
+          <h2> About Me</h2>
           <ul>
             <li>
               I have volunteered in hospital and been part of explaining impacts
@@ -48,7 +42,7 @@ export const AboutMe = () => {
             </li>
           </ul>
         </Typography>
-      </Stack>
+      </Box>
     </Box>
   );
 };

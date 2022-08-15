@@ -35,7 +35,7 @@ export const Header = () => {
         sx={{ color: "#ffffff" }}
       >
         <h1>
-          <span className="wave">&#128075;</span> Hello, I am Amirtha
+          <span className="wave">&#128075;&#127997;</span> Hello, I am Amirtha
         </h1>
       </Typography>
       ;

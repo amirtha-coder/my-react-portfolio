@@ -28,7 +28,7 @@ export const NavBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" color="secondary">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <SettingsInputAntennaIcon
@@ -42,14 +42,13 @@ export const NavBar = () => {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
+              fontFamily: "default",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
+              color: "#ffffff",
             }}
           >
-            LOGO
+            AMIRTHA
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -107,7 +106,7 @@ export const NavBar = () => {
               textDecoration: "none",
             }}
           >
-            LOGO
+            AMIRTHA
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
