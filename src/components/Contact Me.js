@@ -16,6 +16,8 @@ export const ContactMe = () => {
   return (
     <Box
       component="form"
+      method="post"
+      action="mailto:amirtha.m.muthirulandi@gmail.com"
       sx={{
         "& .MuiTextField-root": { m: 1, width: "25ch" },
         background:
@@ -25,7 +27,6 @@ export const ContactMe = () => {
         borderRadius: "5%",
       }}
       noValidate
-      autoComplete="off"
     >
       <Typography component="h3" variant="h2" align="center">
         Contact Me
