@@ -9,10 +9,12 @@ import { NavBar } from "./components/NavBar";
 import { Projects } from "./components/Projects";
 
 export const App = () => {
+  const pages = ["About Me", "Portfolio", "Contact Me", "CV"];
+
   return (
     <body>
       <header>
-        <NavBar />
+        <NavBar pages={pages} />
         <Header />
       </header>
       <main>

@@ -14,9 +14,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
-const pages = ["AboutMe", "Portfolio", "Contact Me", "CV"];
-
-export const NavBar = () => {
+export const NavBar = ({ pages }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
