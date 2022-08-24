@@ -22,7 +22,6 @@ export const NavBar = ({ pages }) => {
 
   const handleCloseNavMenu = (event) => {
     setAnchorElNav(null);
-    navigate(`${event.target}`, { replace: true });
   };
 
   return (

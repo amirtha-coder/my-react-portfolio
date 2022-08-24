@@ -12,6 +12,7 @@ import { NavBar } from "./NavBar";
 import { Footer } from "./Footer";
 
 export const ContactMe = ({ pages }) => {
+  const [clearMessage, setClearMessage] = React.useState(false);
   const [open, setOpen] = React.useState(false);
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
