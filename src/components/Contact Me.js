@@ -11,16 +11,16 @@ import MuiAlert from "@mui/material/Alert";
 import { NavBar } from "./NavBar";
 import { Footer } from "./Footer";
 
-const Alert = React.forwardRef(function Alert(props, ref) {
-  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-});
-
-export const ContactMe = () => {
+export const ContactMe = ({ pages }) => {
   const [open, setOpen] = React.useState(false);
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
   const form = useRef();
+
+  const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -71,7 +71,7 @@ export const ContactMe = () => {
 
   return (
     <Container>
-      <NavBar />
+      <NavBar pages={pages} />
       <Box
         component="form"
         ref={form}

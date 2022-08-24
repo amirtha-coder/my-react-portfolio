@@ -1,17 +1,16 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Typewriter from "typewriter-effect";
 import "../App.css";
 
 import { Container, Stack } from "@mui/system";
 import { NavBar } from "./NavBar";
 import { Footer } from "./Footer";
 
-export const AboutMe = () => {
+export const AboutMe = ({ pages }) => {
   return (
     <Container>
-      <NavBar />
+      <NavBar pages={pages} />
       <Box
         sx={{
           display: "flex",

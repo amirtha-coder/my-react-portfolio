@@ -7,11 +7,12 @@ import Typography from "@mui/material/Typography";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import { NavBar } from "./NavBar";
+import { Footer } from "./Footer";
 
-export const Projects = () => {
+export const Projects = ({ pages }) => {
   return (
     <Box>
-      <NavBar />
+      <NavBar pages={pages} />
       <Container
         sx={{
           display: "flex",

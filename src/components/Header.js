@@ -7,11 +7,11 @@ import "../App.css";
 import { NavBar } from "./NavBar";
 import { Footer } from "./Footer";
 
-export const Header = () => {
+export const Header = ({ pages }) => {
   const isMobile = useMediaQuery("(max-width:600px)");
   return (
     <Container>
-      <NavBar />
+      <NavBar pages={pages} />
       <Stack
         direction="column"
         spacing={2}
